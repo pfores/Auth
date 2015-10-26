@@ -15,13 +15,11 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get('/login', function () {
-    return view('login');
-});
-
-Route::get('/home', function () {
+Route::get('/home', ['as' =>       'auth.home',function () {
     return view('home');
-});
+}]);
+Route::get('/login',['as' =>       'auth.login',     'uses' =>  'LoginController@getLogin']);
+Route::post('/postLogin', ['as' => 'auth.postLogin', 'uses' => 'LoginController@postLogin']);
 
 Route::get('/resource', function () {
     $authenticated = false;

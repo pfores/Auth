@@ -40,7 +40,8 @@
     <div class="content">
         <div class="title">LOGIN</div>
 
-        <form>
+        <form method="post" action="{{ route('auth.postLogin') }}">
+            {!! csrf_field() !!}
             <div class="form-group">
                 <label for="email">Email adress:</label>
                 <input type="email" class="form-control" id="email" name="email">
@@ -49,6 +50,11 @@
                 <label for="password">Password:</label>
                 <input type="password" class="form-control" id="password" name="password">
             </div>
+            <div class="checkbox">
+                <label><input type="checkbox">Remember me</label>
+            </div>
+                <button type="submit" class="btn btn-default">Login</button>
+                <button type="reset" class="btn btn-default">Reset</button>
 
         </form>
     </div>
