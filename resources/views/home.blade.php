@@ -38,19 +38,7 @@
 <body>
 <div class="container">
     <div class="content">
-        <div class="title">LOGIN</div>
-
-        <form>
-            <div class="form-group">
-                <label for="email">Email adress:</label>
-                <input type="email" class="form-control" id="email" name="email">
-            </div>
-            <div class="form-group">
-                <label for="password">Password:</label>
-                <input type="password" class="form-control" id="password" name="password">
-            </div>
-
-        </form>
+        <div class="title">HOME</div>
     </div>
 </div>
 </body>
