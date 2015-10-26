@@ -6,10 +6,21 @@ use Illuminate\Http\Request;
 use App\Http\Requests;
 use App\Http\Controllers\Controller;
 
+/**
+ * Class LoginController
+ * @package App\Http\Controllers
+ */
 class LoginController extends Controller
 {
 
-   public function postLogin(Request $request) {
+    /**
+     * Process a login HTTP POST
+     *
+     *
+     * @param Request $request
+     * @return \Illuminate\Http\RedirectResponse
+     */
+    public function postLogin(Request $request) {
      //TODO
        //dd($request->all());
      //\Debugbar::info("Ok entra a postlogin");
@@ -23,10 +34,19 @@ class LoginController extends Controller
            return redirect()->route('auth.login');
        }
    }
+
+    /**
+     * @return \Illuminate\View\View
+     */
     public function getLogin() {
     return view('login');
     }
 
+    /**
+     * @param $email
+     * @param $password
+     * @return bool
+     */
     private function login($email, $password)
     {
         //TODO: Mirar bé a la base de dades
