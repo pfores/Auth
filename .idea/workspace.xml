@@ -4,11 +4,7 @@
     <bookmark url="file://$PROJECT_DIR$/app/Http/routes.php" line="24" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="eefa310c-a143-4861-b843-9df90e80584e" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/Auth.iml" afterPath="$PROJECT_DIR$/.idea/Auth.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/vcs.xml" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-    </list>
+    <list default="true" id="eefa310c-a143-4861-b843-9df90e80584e" name="Default" comment="" />
     <ignored path="Auth.iws" />
     <ignored path=".idea/workspace.xml" />
     <ignored path=".idea/dataSources.local.xml" />
@@ -372,7 +368,7 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="75" y="62" width="1375" height="876" extended-state="0" />
+    <frame x="75" y="62" width="1375" height="876" extended-state="1" />
     <editor active="true" />
     <layout>
       <window_info id="Gulp" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
