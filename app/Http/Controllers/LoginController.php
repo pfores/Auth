@@ -2,8 +2,9 @@
 
 namespace App\Http\Controllers;
 
+use Hash;
+use App\User;
 use Illuminate\Http\Request;
-use App\Http\Requests;
 use App\Http\Controllers\Controller;
 
 /**
@@ -38,9 +39,6 @@ class LoginController extends Controller
     /**
      * @return \Illuminate\View\View
      */
-    public function getLogin() {
-    return view('login');
-    }
 
     /**
      * @param $email
@@ -50,6 +48,20 @@ class LoginController extends Controller
     private function login($email, $password)
     {
         //TODO: Mirar bé a la base de dades
-        return true;
+
+        //$user = User::findOrFail(id);
+        //$user = User::all();
+        $user = User::where('email', $email)->first();
+
+        if (Hash::check($password, $user->password)) {
+            return true;
+        } else {
+            return false;
+        }
     }
+
+        public function getLogin() {
+        return view('login');
+    }
+
 }

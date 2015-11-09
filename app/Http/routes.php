@@ -1,8 +1,4 @@
 <?php
-+
-Route::get('/patata',function () {
-    echo "Hola";
-});
 
 /*
 |--------------------------------------------------------------------------
@@ -15,15 +11,17 @@ Route::get('/patata',function () {
 |
 */
 
+Route::get('/login',
+    ['as' => 'auth.login', 'uses' =>  'LoginController@getLogin']);
+Route::post('/postLogin', ['as' => 'auth.postLogin', 'uses' => 'LoginController@postLogin']);
+
 Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get('/home',       ['as' => 'auth.home',function () {
+Route::get('/home',['as' => 'auth.home',function () {
     return view('home');
 }]);
-Route::get('/login',      ['as' => 'auth.login',     'uses' =>  'LoginController@getLogin']);
-Route::post('/postLogin', ['as' => 'auth.postLogin', 'uses' => 'LoginController@postLogin']);
 
 Route::get('/resource', function () {
     $authenticated = false;
@@ -38,7 +36,21 @@ Route::get('/resource', function () {
     if ($authenticated) {
         return view('resource');
     } else {
-        return view('login');
+        return redirect()->route('auth.login');
     }
 
 });
+
+Route::get('/flushSession',
+    ['as' => 'auth.home',
+    function() {
+        Session::flush();
+    }]
+);
+
+Route::get('/register',
+    ['as' => 'session.flush',
+        function() {
+           echo "Aqui et registraras";
+        }]
+);
