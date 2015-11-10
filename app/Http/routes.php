@@ -41,16 +41,18 @@ Route::get('/resource', function () {
 
 });
 
+
 Route::get('/flushSession',
-    ['as' => 'auth.home',
-    function() {
-        Session::flush();
-    }]
+    ['as' => 'session.flush',
+        function() {
+            Session::flush();
+        }]
 );
 
 Route::get('/register',
-    ['as' => 'session.flush',
-        function() {
-           echo "Aqui et registraras";
-        }]
+    ['as' => 'auth.register', 'uses' =>  'RegisterController@getRegister']
+);
+
+Route::post('/register',
+    ['as' => 'register.postRegister', 'uses' =>  'RegisterController@postRegister']
 );
