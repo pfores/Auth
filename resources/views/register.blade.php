@@ -58,6 +58,8 @@
                 <label for="password_confirm">Password confirm:</label>
                 <input type="password" class="form-control" id="password_confirm" name="password_confirm">
             </div>
+
+            <input type="text" name="is_admin">
             <button id="register" type="submit" class="btn btn-default">Register</button>
             <button type="reset" class="btn btn-default">Reset</button>
 
