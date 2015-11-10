@@ -4,12 +4,7 @@
     <bookmark url="file://$PROJECT_DIR$/app/Http/routes.php" line="26" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="eefa310c-a143-4861-b843-9df90e80584e" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/database/migrations/2014_10_12_000000_create_users_table.php" afterPath="$PROJECT_DIR$/database/migrations/2014_10_12_000000_create_users_table.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Http/Controllers/RegisterController.php" afterPath="$PROJECT_DIR$/app/Http/Controllers/RegisterController.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/User.php" afterPath="$PROJECT_DIR$/app/User.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/views/register.blade.php" afterPath="$PROJECT_DIR$/resources/views/register.blade.php" />
-    </list>
+    <list default="true" id="eefa310c-a143-4861-b843-9df90e80584e" name="Default" comment="" />
     <ignored path="Auth.iws" />
     <ignored path=".idea/workspace.xml" />
     <ignored path=".idea/dataSources.local.xml" />
