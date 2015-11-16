@@ -54,19 +54,25 @@
             {!! csrf_field() !!}
             <div class="form-group">
                 <label for="name">User name:</label>
-                <input type="text" class="form-control" id="name" name="name">
+                <input type="text" class="form-control" id="name" name="name"
+                       value="{{ old ('name') }}"
+                       placeholder="El teu nom aquí"
+                       required>
             </div>
             <div class="form-group">
                 <label for="email">Email adress:</label>
-                <input type="email" class="form-control" id="email" name="email">
+                <input type="email" class="form-control" id="email" name="email"
+                       value="{{ old ('email') }}"
+                       placeholder="email@example.com"
+                       required>
             </div>
             <div class="form-group">
                 <label for="password">Password:</label>
-                <input type="password" class="form-control" id="password" name="password">
+                <input type="password" class="form-control" id="password" name="password" required>
             </div>
             <div class="form-group">
                 <label for="password_confirm">Password confirm:</label>
-                <input type="password" class="form-control" id="password_confirm" name="password_confirmation">
+                <input type="password" class="form-control" id="password_confirm" name="password_confirmation" required>
             </div>
 
             <button id="register" type="submit" class="btn btn-default">Register</button>

@@ -22,10 +22,15 @@ class LoginController extends Controller
      * @return \Illuminate\Http\RedirectResponse
      */
     public function postLogin(Request $request) {
-     //TODO
+     //
        //dd($request->all());
      //\Debugbar::info("Ok entra a postlogin");
       // echo("Ok entra a postlogin 2");
+
+        $this->validate($request, [
+            'email' => 'required|email',
+            'password' => 'required'
+        ]);
 
        if ($this->login($request->email,$request->password)) {
            //REDIRECT TO HOME
@@ -52,6 +57,10 @@ class LoginController extends Controller
         //$user = User::findOrFail(id);
         //$user = User::all();
         $user = User::where('email', $email)->first();
+
+        if ($user == null) {
+            return false;
+        }
 
         if (Hash::check($password, $user->password)) {
             return true;
