@@ -81,7 +81,7 @@
         </form>
 
         Ja tens usuari?
-        <a id="register" href="{{ route('auth.register') }}">Loga't</a>
+        <a id="register" href="{{ route('auth.login') }}">Loga't</a>
     </div>
 </div>
 </body>
