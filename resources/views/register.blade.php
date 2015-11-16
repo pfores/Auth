@@ -40,6 +40,16 @@
     <div class="content">
         <div class="title">REGISTER</div>
 
+        @if (count($errors) > 0)
+            <div class="alert alert-danger">
+                <ul>
+                    @foreach ($errors->all() as $error)
+                        <li>{{ $error }}</li>
+                    @endforeach
+                </ul>
+            </div>
+        @endif
+
         <form method="post" action="{{ route('register.postRegister') }}">
             {!! csrf_field() !!}
             <div class="form-group">
@@ -56,10 +66,9 @@
             </div>
             <div class="form-group">
                 <label for="password_confirm">Password confirm:</label>
-                <input type="password" class="form-control" id="password_confirm" name="password_confirm">
+                <input type="password" class="form-control" id="password_confirm" name="password_confirmation">
             </div>
 
-            <input type="text" name="is_admin">
             <button id="register" type="submit" class="btn btn-default">Register</button>
             <button type="reset" class="btn btn-default">Reset</button>
 
