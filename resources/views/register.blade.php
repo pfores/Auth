@@ -67,7 +67,8 @@
                 <input type="email" class="form-control" id="email" name="email"
                        value="{{ old ('email') }}"
                        placeholder="email@example.com"
-                       required>
+                       required
+                v-on:onblur="checkEmailExists">
                 <div v-show="exists">Email ja existeix</div>
             </div>
             <div class="form-group">
