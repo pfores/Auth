@@ -28,7 +28,6 @@ class LoginController extends Controller
       // echo("Ok entra a postlogin 2");
 
         $this->validate($request, [
-            'email' => 'required|email',
             'password' => 'required'
         ]);
 

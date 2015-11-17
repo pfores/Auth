@@ -5,6 +5,9 @@
 
     <link href="https://fonts.googleapis.com/css?family=Lato:100" rel="stylesheet" type="text/css">
 
+    <link href="{{asset('css/all.css') }}" rel="stylesheet" type="text/css">
+    <link href="{{asset('css/app.css') }}" rel="stylesheet" type="text/css">
+
     <style>
         html, body {
             height: 100%;
@@ -59,12 +62,13 @@
                        placeholder="El teu nom aquí"
                        required>
             </div>
-            <div class="form-group">
+            <div class="form-group" id="emailFormGroup" >
                 <label for="email">Email adress:</label>
                 <input type="email" class="form-control" id="email" name="email"
                        value="{{ old ('email') }}"
                        placeholder="email@example.com"
                        required>
+                <div v-show="exists">Email ja existeix</div>
             </div>
             <div class="form-group">
                 <label for="password">Password:</label>
@@ -75,7 +79,7 @@
                 <input type="password" class="form-control" id="password_confirm" name="password_confirmation" required>
             </div>
 
-            <button id="register" type="submit" class="btn btn-default">Register</button>
+            <button id="register" type="submit" class="btn btn-primary">Register</button>
             <button type="reset" class="btn btn-default">Reset</button>
 
         </form>
@@ -84,5 +88,7 @@
         <a id="register" href="{{ route('auth.login') }}">Loga't</a>
     </div>
 </div>
+<script src="{{ asset('js/all.js') }}"></script>
+<script src="{{ asset('js/main.js') }}"></script>
 </body>
 </html>
