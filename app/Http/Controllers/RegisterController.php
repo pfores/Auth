@@ -11,10 +11,12 @@ use Illuminate\Support\Facades\Input;
 use stdClass;
 
 /**
- * @property  email
  */
 class RegisterController extends Controller
 {
+    private $email;
+    private $name;
+
     public function getRegister()
     {
         return view('register');
