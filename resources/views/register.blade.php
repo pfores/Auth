@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html xmlns:v-on="http://www.w3.org/1999/xhtml">
+<html>
 <head>
     <title>Laravel</title>
 
@@ -62,14 +62,13 @@
                        placeholder="El teu nom aquí"
                        required>
             </div>
-            <div class="form-group" id="emailFormGroup" >
+            <div class="form-group">
                 <label for="email">Email adress:</label>
                 <input type="email" class="form-control" id="email" name="email"
                        value="{{ old ('email') }}"
-                       placeholder="email@example.com"
+                       placeholder="@{{placeholder}}"
                        required
-                v-on:onblur="checkEmailExists">
-                <div v-show="exists">Email ja existeix</div>
+                       v-on:blur="checkEmailExists">
             </div>
             <div class="form-group">
                 <label for="password">Password:</label>

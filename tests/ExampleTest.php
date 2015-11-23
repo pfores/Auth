@@ -61,14 +61,14 @@ class ExampleTest extends TestCase
         Session::set('authenticated',false);
     }
 
-    public function testLoginPageHaveRegisterLinkAndWorksOk()
+    public function AtestLoginPageHaveRegisterLinkAndWorksOk()
     {
         $this->visit('/login')
             ->click('Register')
             ->seePageIs('/register');
     }
 
-    public function testPostLoginOk()
+    public function AtestPostLoginOk()
     {
         $this->visit('/login')
             ->type('pfores92@gmail.com', 'email')
@@ -78,7 +78,7 @@ class ExampleTest extends TestCase
             ->seePageIs('/home');
     }
 
-    public function testPostLoginNotOk()
+    public function AtestPostLoginNotOk()
     {
         $this->visit('/login')
             ->type('pepitapalotes@gmail.com', 'email')
