@@ -8,7 +8,11 @@ use Illuminate\Http\Request;
 use App\Http\Requests;
 use App\Http\Controllers\Controller;
 use Illuminate\Support\Facades\Input;
+use stdClass;
 
+/**
+ * @property  email
+ */
 class RegisterController extends Controller
 {
     public function getRegister()
@@ -34,11 +38,34 @@ class RegisterController extends Controller
 
         $user->save();
 
+        $this->email = $request->get('email');
+
+        $this->sendRegisterEmail();
+
         return redirect()->route('auth.login');
+    }
 
         //User::create(Input::except('password'));
 
 //        User::create(Input::all());
 
+        public function sendRegisterEmail() {
+
+            $emailData = new stdClass();
+            $emailData->email = $this->email;
+            $emailData->name = $this->name;
+            $emailData->subject = "Welcome user" .$this->name;
+            $emailData->footer = "footer here";
+            $emailData->header = "header here";
+
+        //$data['name'] = "Pepito";
+            $data['name'] = $this->name;
+
+        \Mail::send('emails.message', $data, function($message) use ($emailData){
+            $message->from(env('CONTACT_MAIL'), env('CONTACT_NAME'));
+            $message->to($emailData->email, $emailData->name);
+            $message->subject($emailData->subject);
+        });
     }
+
 }
