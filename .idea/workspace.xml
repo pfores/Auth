@@ -3,9 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="eefa310c-a143-4861-b843-9df90e80584e" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Http/Middleware/Authenticate.php" afterPath="$PROJECT_DIR$/app/Http/Middleware/Authenticate.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Http/routes.php" afterPath="$PROJECT_DIR$/app/Http/routes.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bootstrap/autoload.php" afterPath="$PROJECT_DIR$/bootstrap/autoload.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Providers/AuthServiceProvider.php" afterPath="$PROJECT_DIR$/app/Providers/AuthServiceProvider.php" />
     </list>
     <ignored path="Auth.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -30,8 +29,28 @@
       <file leaf-file-name="routes.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/Http/routes.php">
           <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-16.875">
+              <caret line="36" column="29" selection-start-line="36" selection-start-column="29" selection-end-line="36" selection-end-column="29" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="AuthServiceProvider.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/Providers/AuthServiceProvider.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.7724138">
+              <caret line="53" column="0" selection-start-line="53" selection-start-column="0" selection-end-line="53" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name=".env" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/.env">
+          <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="22" column="25" selection-start-line="22" selection-start-column="16" selection-end-line="22" selection-end-column="25" />
+              <caret line="18" column="23" selection-start-line="18" selection-start-column="23" selection-end-line="18" selection-end-column="23" />
               <folding />
             </state>
           </provider>
@@ -40,17 +59,17 @@
       <file leaf-file-name="Kernel.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/Http/Kernel.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
+            <state vertical-scroll-proportion="-17.5">
               <caret line="28" column="43" selection-start-line="28" selection-start-column="43" selection-end-line="28" selection-end-column="43" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Authenticate.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Authenticate.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/Http/Middleware/Authenticate.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="1.3732591">
+            <state vertical-scroll-proportion="-19.583334">
               <caret line="36" column="0" selection-start-line="36" selection-start-column="0" selection-end-line="36" selection-end-column="0" />
               <folding />
             </state>
@@ -107,28 +126,6 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="HandleExceptions.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/HandleExceptions.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="119" column="0" selection-start-line="119" selection-start-column="0" selection-end-line="119" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="RegisterController.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/Http/Controllers/RegisterController.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="33" column="0" selection-start-line="33" selection-start-column="0" selection-end-line="33" selection-end-column="0" />
-              <folding>
-                <element signature="e#40#53#0#PHP" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
     </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
@@ -173,8 +170,9 @@
         <option value="$PROJECT_DIR$/app/Http/Controllers/ApiController.php" />
         <option value="$PROJECT_DIR$/app/Http/Kernel.php" />
         <option value="$PROJECT_DIR$/app/Http/Middleware/Authenticate.php" />
-        <option value="$PROJECT_DIR$/app/Http/routes.php" />
         <option value="$PROJECT_DIR$/bootstrap/autoload.php" />
+        <option value="$PROJECT_DIR$/app/Http/routes.php" />
+        <option value="$PROJECT_DIR$/app/Providers/AuthServiceProvider.php" />
       </list>
     </option>
   </component>
@@ -470,7 +468,7 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="DefaultHtmlFileTemplate" value="Html5" />
-    <property name="SearchEverywhereHistoryKey" value="autolo&#9;FILE&#9;file:///home/pau/Code/Laravels/Auth/bootstrap/autoload.php&#10;auto&#9;FILE&#9;file:///home/pau/Code/Laravels/Auth/bootstrap/autoload.php&#10;kerne&#9;FILE&#9;file:///home/pau/Code/Laravels/Auth/app/Http/Kernel.php&#10;rout&#9;FILE&#9;file:///home/pau/Code/Laravels/Auth/app/Http/routes.php&#10;kernel&#9;null&#9;null&#10;regis&#9;FILE&#9;file:///home/pau/Code/Laravels/Auth/app/Http/Controllers/RegisterController.php&#10;composer.&#9;FILE&#9;file:///home/pau/Code/Laravels/Auth/composer.json&#10;apic&#9;FILE&#9;file:///home/pau/Code/Laravels/Auth/app/Http/Controllers/ApiController.php&#10;main&#9;FILE&#9;file:///home/pau/Code/Laravels/Auth/resources/assets/js/main.js&#10;Api&#9;FILE&#9;file:///home/pau/Code/Laravels/Auth/app/Http/Controllers/ApiController.php&#10;main.js&#9;FILE&#9;file:///home/pau/Code/Laravels/Auth/public/js/main.js&#10;ApiC&#9;null&#9;null&#10;mainjs&#9;FILE&#9;file:///home/pau/Code/Laravels/Auth/public/js/main.js&#10;gulp&#9;FILE&#9;file:///home/pau/Code/Laravels/Auth/gulpfile.js&#10;mai&#9;FILE&#9;file:///home/pau/Code/Laravels/Auth/resources/assets/js/main.js&#10;app.php&#9;FILE&#9;file:///home/pau/Code/Laravels/Auth/config/app.php&#10;auth.&#9;FILE&#9;file:///home/pau/Code/Laravels/Auth/config/auth.php&#10;.env&#9;FILE&#9;file:///home/pau/Code/Laravels/Auth/.env&#10;databases&#9;null&#9;null&#10;resourc&#9;FILE&#9;file:///home/pau/Code/Laravels/Auth/resources/views/resource.blade.php&#10;exampl&#9;FILE&#9;file:///home/pau/Code/Laravels/Auth/tests/ExampleTest.php&#10;queue.php&#9;FILE&#9;file:///home/pau/Code/Laravels/Auth/config/queue.php&#10;servic&#9;FILE&#9;file:///home/pau/Code/Laravels/Auth/config/services.php&#10;all.j&#9;FILE&#9;file:///home/pau/Code/Laravels/Auth/node_modules/laravel-elixir/node_modules/browser-sync/node_modules/lodash/collection/all.js&#10;app-&#9;FILE&#9;file:///home/pau/Code/Laravels/Auth/bootstrap/app.php&#10;RegisterController&#9;FILE&#9;file:///home/pau/Code/Laravels/Auth/app/Http/Controllers/RegisterController.php&#10;ro&#9;FILE&#9;file:///home/pau/Code/Laravels/Auth/app/Http/Controllers/LoginController.php&#10;services.ph&#9;FILE&#9;file:///home/pau/Code/Laravels/Auth/config/services.php&#10;composer&#9;FILE&#9;file:///home/pau/Code/Laravels/Auth/composer.json&#10;mail.&#9;FILE&#9;file:///home/pau/Code/Laravels/Auth/config/mail.php&#10;reg&#9;FILE&#9;file:///home/pau/Code/Laravels/Auth/resources/views/register.blade.php&#10;auth&#9;FILE&#9;file:///home/pau/Code/Laravels/Auth/config/auth.php&#10;app.scss&#9;FILE&#9;file:///home/pau/Code/Laravels/Auth/resources/assets/sass/app.scss&#10;app&#9;null&#9;null&#10;register&#9;FILE&#9;file:///home/pau/Code/Laravels/Auth/resources/views/register.blade.php&#10;logic&#9;FILE&#9;file:///home/pau/Code/Laravels/Auth/app/Http/Controllers/LoginController.php&#10;login&#9;FILE&#9;file:///home/pau/Code/Laravels/Auth/resources/views/login.blade.php&#10;logico&#9;FILE&#9;file:///home/pau/Code/Laravels/Auth/app/Http/Controllers/LoginController.php&#10;regi&#9;FILE&#9;file:///home/pau/Code/Laravels/Auth/resources/views/register.blade.php&#10;re&#9;FILE&#9;file:///home/pau/Code/Laravels/Auth/app/Http/Controllers/RegisterController.php&#10;loginc&#9;FILE&#9;file:///home/pau/Code/Laravels/Auth/app/Http/Controllers/LoginController.php&#10;regist&#9;FILE&#9;file:///home/pau/Code/Laravels/Auth/resources/views/register.blade.php&#10;routes.p&#9;FILE&#9;file:///home/pau/Code/Laravels/Auth/app/Http/routes.php&#10;egist&#9;FILE&#9;file:///home/pau/Code/Laravels/Auth/resources/views/register.blade.php&#10;registerC&#9;FILE&#9;file:///home/pau/Code/Laravels/Auth/app/Http/Controllers/RegisterController.php&#10;user&#9;FILE&#9;file:///home/pau/Code/Laravels/Auth/app/User.php&#10;registerc&#9;null&#9;null&#10;routes&#9;FILE&#9;file:///home/pau/Code/Laravels/Auth/app/Http/routes.php&#10;route&#9;FILE&#9;file:///home/pau/Code/Laravels/Auth/app/Http/routes.php&#10;Examp&#9;FILE&#9;file:///home/pau/Code/Laravels/Auth/tests/ExampleTest.php" />
+    <property name="SearchEverywhereHistoryKey" value="AuthSer&#9;null&#9;null&#10;.env&#9;FILE&#9;file:///home/pau/Code/Laravels/Auth/.env&#10;autolo&#9;FILE&#9;file:///home/pau/Code/Laravels/Auth/bootstrap/autoload.php&#10;auto&#9;FILE&#9;file:///home/pau/Code/Laravels/Auth/bootstrap/autoload.php&#10;kerne&#9;FILE&#9;file:///home/pau/Code/Laravels/Auth/app/Http/Kernel.php&#10;rout&#9;FILE&#9;file:///home/pau/Code/Laravels/Auth/app/Http/routes.php&#10;kernel&#9;null&#9;null&#10;regis&#9;FILE&#9;file:///home/pau/Code/Laravels/Auth/app/Http/Controllers/RegisterController.php&#10;composer.&#9;FILE&#9;file:///home/pau/Code/Laravels/Auth/composer.json&#10;apic&#9;FILE&#9;file:///home/pau/Code/Laravels/Auth/app/Http/Controllers/ApiController.php&#10;main&#9;FILE&#9;file:///home/pau/Code/Laravels/Auth/resources/assets/js/main.js&#10;Api&#9;FILE&#9;file:///home/pau/Code/Laravels/Auth/app/Http/Controllers/ApiController.php&#10;main.js&#9;FILE&#9;file:///home/pau/Code/Laravels/Auth/public/js/main.js&#10;ApiC&#9;null&#9;null&#10;mainjs&#9;FILE&#9;file:///home/pau/Code/Laravels/Auth/public/js/main.js&#10;gulp&#9;FILE&#9;file:///home/pau/Code/Laravels/Auth/gulpfile.js&#10;mai&#9;FILE&#9;file:///home/pau/Code/Laravels/Auth/resources/assets/js/main.js&#10;app.php&#9;FILE&#9;file:///home/pau/Code/Laravels/Auth/config/app.php&#10;auth.&#9;FILE&#9;file:///home/pau/Code/Laravels/Auth/config/auth.php&#10;databases&#9;null&#9;null&#10;resourc&#9;FILE&#9;file:///home/pau/Code/Laravels/Auth/resources/views/resource.blade.php&#10;exampl&#9;FILE&#9;file:///home/pau/Code/Laravels/Auth/tests/ExampleTest.php&#10;queue.php&#9;FILE&#9;file:///home/pau/Code/Laravels/Auth/config/queue.php&#10;servic&#9;FILE&#9;file:///home/pau/Code/Laravels/Auth/config/services.php&#10;all.j&#9;FILE&#9;file:///home/pau/Code/Laravels/Auth/node_modules/laravel-elixir/node_modules/browser-sync/node_modules/lodash/collection/all.js&#10;app-&#9;FILE&#9;file:///home/pau/Code/Laravels/Auth/bootstrap/app.php&#10;RegisterController&#9;FILE&#9;file:///home/pau/Code/Laravels/Auth/app/Http/Controllers/RegisterController.php&#10;ro&#9;FILE&#9;file:///home/pau/Code/Laravels/Auth/app/Http/Controllers/LoginController.php&#10;services.ph&#9;FILE&#9;file:///home/pau/Code/Laravels/Auth/config/services.php&#10;composer&#9;FILE&#9;file:///home/pau/Code/Laravels/Auth/composer.json&#10;mail.&#9;FILE&#9;file:///home/pau/Code/Laravels/Auth/config/mail.php&#10;reg&#9;FILE&#9;file:///home/pau/Code/Laravels/Auth/resources/views/register.blade.php&#10;auth&#9;FILE&#9;file:///home/pau/Code/Laravels/Auth/config/auth.php&#10;app.scss&#9;FILE&#9;file:///home/pau/Code/Laravels/Auth/resources/assets/sass/app.scss&#10;app&#9;null&#9;null&#10;register&#9;FILE&#9;file:///home/pau/Code/Laravels/Auth/resources/views/register.blade.php&#10;logic&#9;FILE&#9;file:///home/pau/Code/Laravels/Auth/app/Http/Controllers/LoginController.php&#10;login&#9;FILE&#9;file:///home/pau/Code/Laravels/Auth/resources/views/login.blade.php&#10;logico&#9;FILE&#9;file:///home/pau/Code/Laravels/Auth/app/Http/Controllers/LoginController.php&#10;regi&#9;FILE&#9;file:///home/pau/Code/Laravels/Auth/resources/views/register.blade.php&#10;re&#9;FILE&#9;file:///home/pau/Code/Laravels/Auth/app/Http/Controllers/RegisterController.php&#10;loginc&#9;FILE&#9;file:///home/pau/Code/Laravels/Auth/app/Http/Controllers/LoginController.php&#10;regist&#9;FILE&#9;file:///home/pau/Code/Laravels/Auth/resources/views/register.blade.php&#10;routes.p&#9;FILE&#9;file:///home/pau/Code/Laravels/Auth/app/Http/routes.php&#10;egist&#9;FILE&#9;file:///home/pau/Code/Laravels/Auth/resources/views/register.blade.php&#10;registerC&#9;FILE&#9;file:///home/pau/Code/Laravels/Auth/app/Http/Controllers/RegisterController.php&#10;user&#9;FILE&#9;file:///home/pau/Code/Laravels/Auth/app/User.php&#10;registerc&#9;null&#9;null&#10;routes&#9;FILE&#9;file:///home/pau/Code/Laravels/Auth/app/Http/routes.php&#10;route&#9;FILE&#9;file:///home/pau/Code/Laravels/Auth/app/Http/routes.php" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="settings.editor.selected.configurable" value="settings.php.debug.servers" />
     <property name="settings.editor.splitter.proportion" value="0.2" />
@@ -550,7 +548,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="65" y="-4" width="1375" height="904" extended-state="6" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
       <window_info id="Gulp" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2603461" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
@@ -562,7 +560,7 @@
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32991013" sideWeight="0.21896163" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
-      <window_info id="Debug" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.4698331" sideWeight="0.3875094" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4698331" sideWeight="0.3875094" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -597,13 +595,8 @@
           <line>62</line>
           <option name="timeStamp" value="6" />
         </line-breakpoint>
-        <line-breakpoint enabled="true" type="php">
-          <url>file://$PROJECT_DIR$/app/Http/Middleware/Authenticate.php</url>
-          <line>36</line>
-          <option name="timeStamp" value="7" />
-        </line-breakpoint>
       </breakpoints>
-      <option name="time" value="8" />
+      <option name="time" value="9" />
     </breakpoint-manager>
     <watches-manager>
       <configuration name="index.php">
@@ -615,13 +608,6 @@
     </watches-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/.env">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/resources/views/resource.blade.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -827,13 +813,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/.env">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="18" column="23" selection-start-line="18" selection-start-column="23" selection-end-line="18" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/gulpfile.js">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -909,7 +888,7 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="33" column="0" selection-start-line="33" selection-start-column="0" selection-end-line="33" selection-end-column="0" />
           <folding>
-            <element signature="e#40#53#0#PHP" expanded="true" />
+            <element signature="e#40#53#0#PHP" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -964,24 +943,40 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/Http/Kernel.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
+        <state vertical-scroll-proportion="-17.5">
           <caret line="28" column="43" selection-start-line="28" selection-start-column="43" selection-end-line="28" selection-end-column="43" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Http/routes.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="22" column="25" selection-start-line="22" selection-start-column="16" selection-end-line="22" selection-end-column="25" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/Http/Middleware/Authenticate.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="1.3732591">
+        <state vertical-scroll-proportion="-19.583334">
           <caret line="36" column="0" selection-start-line="36" selection-start-column="0" selection-end-line="36" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.env">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="18" column="23" selection-start-line="18" selection-start-column="23" selection-end-line="18" selection-end-column="23" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/routes.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-16.875">
+          <caret line="36" column="29" selection-start-line="36" selection-start-column="29" selection-end-line="36" selection-end-column="29" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Providers/AuthServiceProvider.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.7724138">
+          <caret line="53" column="0" selection-start-line="53" selection-start-column="0" selection-end-line="53" selection-end-column="0" />
           <folding />
         </state>
       </provider>
