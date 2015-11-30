@@ -19,20 +19,30 @@ Route::get('/', function () {
 Route::get('/home',['as' => 'auth.home',function () {
     return view('home');
 }]);
-Route::get('/resource', function () {
-    $authenticated = false;
-    Session::set('authenticated',false);
-    //dd(Session::all());
-    if (Session::has('authenticated')) {
-        if (Session::get('authenticated') == true ) {
-            $authenticated = true;
-        }
-    }
-    if ($authenticated) {
+Route::group(['middleware' => 'auth'], function () {
+    Route::get('/resource', function () {
+//    $authenticated = false;
+//    Session::set('authenticated',false);
+//    //dd(Session::all());
+//    if (Session::has('authenticated')) {
+//        if (Session::get('authenticated') == true ) {
+//            $authenticated = true;
+//        }
+//    }
+//    if ($authenticated) {
+//        return view('resource');
+//    } else {
+//        return redirect()->route('auth.login');
+//    }
+//    if (Auth::check()){
+//        return view ('resource');
+//    } else {
+//        return redirect()->route ('auth.login');
+//    }
+//    Route::get('/patata', ['as' =>'patata',
+//        'middleware' => 'auth', 'PatataController@getPatata']);
         return view('resource');
-    } else {
-        return redirect()->route('auth.login');
-    }
+    });
 });
 Route::get('/flushSession',
     ['as' => 'session.flush',
@@ -46,8 +56,7 @@ Route::get('/register',
 Route::post('/register',
     ['as' => 'register.postRegister', 'uses' =>  'RegisterController@postRegister']
 );
-
 Route::post('/checkEmailExists',
     ['as' => 'checkEmailExists',
-    'uses' =>  'ApiController@checkEmailExists']
+        'uses' =>  'ApiController@checkEmailExists']
 );

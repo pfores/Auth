@@ -42,6 +42,6 @@ class Authenticate
             }
         }
 
-        return $next($request);
+        return $next($request); // Amb aixo aconseguim encarregar-mos de la S de SOLID.
     }
 }
